@@ -15,6 +15,15 @@ set container name dn42-roa environment 'CACHE' value 'https://dn42.burble.com/r
 set container name dn42-roa environment 'VERIFY' value 'false'
 set container name dn42-roa environment 'CHECKTIME' value 'false'
 
+or for host networking
+
+set container name dn42-roa image fransking/vyos-gortr
+set container name dn42-roa allow-host-networks
+set container name dn42-roa environment 'CACHE' value 'https://dn42.burble.com/roa/dn42_roa_46.json'
+set container name dn42-roa environment 'VERIFY' value 'false'
+set container name dn42-roa environment 'CHECKTIME' value 'false'
+set container name dn42-roa environment 'PORT' value '38082'
+
 commit 
 save
 ```

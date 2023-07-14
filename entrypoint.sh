@@ -2,7 +2,7 @@
 
 if [ $1 == "gortr" ] 
 then 
-    exec ./gortr -cache $CACHE -verify=$VERIFY -checktime=$CHECKTIME -bind :8082
+    exec ./gortr -cache $CACHE -verify=$VERIFY -checktime=$CHECKTIME -bind :$PORT
 fi 
 
 exec "$@"
