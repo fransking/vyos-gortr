@@ -2,7 +2,7 @@
 GoRTR container suitable for running on VyOS
 
 ```
-container image fransking/vyos-gortr
+add container image fransking/vyos-gortr
 configure
 
 set container network dn42-roa prefix 172.20.0.0/16
